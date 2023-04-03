@@ -27,40 +27,26 @@
     ></script>
 
     <style>
-      #title {
-        height: 200px;
-        width: 100%;
-      }
       #title ul {
         list-style: none;
       }
       #top-bar {
         font-size: small;
       }
-
-      #top-bar nav {
-        padding-left: 3%;
-        padding-right: 3%;
-        background-image: url("https://www.ktu.edu.tr/image/top_bg.png");
+      #top-bar a {
+        margin-top: 5px;
+        margin-right: 7px;
       }
-
-      #top-bar .dropdown-toggle {
-        background-color: #00426a;
-        color: white;
+      #top-bar .container-fluid {
+        background-image: url("https://www.ktu.edu.tr/image/top_bg.png");
       }
 
       #bottom-navbar {
         display: flex;
         min-height: 130px;
-        max-width: 100%;
-        padding: 0% 6%;
         justify-content: space-between;
       }
-      .logo-left {
-        max-height: 130px;
-        max-width: 25%;
-        margin-right: 110px;
-      }
+
       .brand-image {
         max-width: 350px;
       }
@@ -191,6 +177,12 @@
       .logo:hover {
         filter: none;
       }
+      .sosyal {
+        color: #fff;
+      }
+      .sosyal:hover {
+        color: #fff;
+      }
     </style>
   </head>
   <body class="d-flex flex-column min-vh-100">
@@ -198,61 +190,57 @@
 
     <section id="title">
       <div id="top-bar">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container-fluid">
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarSupportedContent"
-              aria-controls="navbarSupportedContent"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
+        <div class="container-fluid">
+          <div class="container-xxl">
+            <div
+              class="row row-cols-auto justify-content-end"
+              style="font-size: 12px"
             >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a
-                    class="nav-link active"
-                    aria-current="page"
-                    href="https://www.ktu.edu.tr/"
-                    >Anasayfa</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="https://www.ktu.edu.tr/tr/iletisim"
-                    >İletişim</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link"
-                    href="http://tanitim.ktu.edu.tr/oynatici.htm?tour=tur.json"
-                    >Sanal Kampüs</a
-                  >
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdown"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Diller
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a class="dropdown-item" href="#">Türkçe</a></li>
-                    <li>
-                      <a class="dropdown-item" href="#">İngilizce</a>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-              <form class="d-flex">
+              <div
+                class="col-auto logo-arastirma d-flex align-items-start d-none d-md-flex"
+              ></div>
+
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="https://www.ktu.edu.tr/"
+                target="_blank"
+                >Anasayfa</a
+              >
+
+              <a
+                class="nav-link"
+                href="https://www.ktu.edu.tr/tr/iletisim"
+                target="_blank"
+                >İletişim</a
+              >
+
+              <a
+                class="nav-link d-none d-md-flex"
+                href="http://tanitim.ktu.edu.tr/oynatici.htm?tour=tur.json"
+                target="_blank"
+                >Sanal Kampüs</a
+              >
+              <div>
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Diller
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Türkçe</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">İngilizce</a>
+                  </li>
+                </ul>
+              </div>
+
+              <form class="d-flex" style="margin-top: 3px; margin-bottom: 3px">
                 <input
                   class="form-control me-2"
                   type="search"
@@ -265,48 +253,79 @@
               </form>
             </div>
           </div>
-        </nav>
-      </div>
-
-      <div id="bottom-navbar">
-        <div class="logo-left p-2">
-          <a href="https://www.ktu.edu.tr/" class="navbar-brand align-self-end">
-            <img
-              src="https://www.ktu.edu.tr/image/logo/birim/tr.png"
-              class="brand-image img-fluid"
-            />
-          </a>
         </div>
-        <div class="right">
-          <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasRight"
-                aria-controls="offcanvasRight"
-              >
-                <span class="navbar-toggler-icon"></span>
-              </button>
+      </div>
+      <div class="container">
+        <div id="bottom-navbar">
+          <div class="p-2">
+            <a
+              href="https://www.ktu.edu.tr/"
+              class="navbar-brand align-self-end"
+            >
+              <img
+                src="https://www.ktu.edu.tr/image/logo/birim/tr.png"
+                class="brand-image img-fluid"
+              />
+            </a>
+          </div>
+          <div class="right">
+            <nav class="navbar navbar-expand-lg">
+              <div class="container-fluid">
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#offcanvasRight"
+                  aria-controls="offcanvasRight"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
 
-              <div
-                class="offcanvas offcanvas-end"
-                tabindex="-1"
-                id="offcanvasRight"
-                aria-labelledby="offcanvasRightLabel"
-              >
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
-                  <button
-                    type="button"
-                    class="btn-close text-reset"
-                    data-bs-dismiss="offcanvas"
-                    aria-label="Close"
-                  ></button>
+                <div
+                  class="offcanvas offcanvas-end"
+                  tabindex="-1"
+                  id="offcanvasRight"
+                  aria-labelledby="offcanvasRightLabel"
+                >
+                  <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+                    <button
+                      type="button"
+                      class="btn-close text-reset"
+                      data-bs-dismiss="offcanvas"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+
+                  <div class="offcanvas-body">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link pb-5 p-3" href="#">KURUMSAL</a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link pb-5 p-3" href="#">ÖĞRENCİ</a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link pb-5 p-3" href="#">AKADEMİK</a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link pb-5 p-3" href="#">İDARİ</a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link pb-5 p-3" href="#">ARAŞTIRMA</a>
+                      </li>
+
+                      <li class="nav-item">
+                        <a class="nav-link pb-5 p-3" href="#">HIZLI ERİŞİM</a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-
-                <div class="offcanvas-body">
+                <div class="collapse navbar-collapse">
                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                       <a class="nav-link pb-5 p-3" href="#">KURUMSAL</a>
@@ -334,35 +353,8 @@
                   </ul>
                 </div>
               </div>
-              <div class="collapse navbar-collapse">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link pb-5 p-3" href="#">KURUMSAL</a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link pb-5 p-3" href="#">ÖĞRENCİ</a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link pb-5 p-3" href="#">AKADEMİK</a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link pb-5 p-3" href="#">İDARİ</a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link pb-5 p-3" href="#">ARAŞTIRMA</a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link pb-5 p-3" href="#">HIZLI ERİŞİM</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+            </nav>
+          </div>
         </div>
       </div>
     </section>
@@ -1453,6 +1445,106 @@
       </div>
     </section>
 
-    <footer id="footer"></footer>
+    <footer id="footer">
+      <div class="container-fluid" style="background-color: #2d2d2d">
+        <div class="container" style="padding-top: 20px; padding-bottom: 10px">
+          <div class="row">
+            <div class="col col-sm-12 col-md-6 col-lg-3">
+              <img
+                src="https://www.ktu.edu.tr/image/Logo2.png"
+                style="max-width: 325px"
+              />
+            </div>
+            <div
+              class="col col-sm-12 col-md-6 col-lg-3"
+              style="color: #fff; margin-top: 20px; padding: 12px"
+            >
+              <div class="d-flex">
+                <i class="fas fa-map-marker-alt"></i>
+                <p style="font-size: 12px; margin-left: 10px">
+                  Karadeniz Teknik Üniversitesi, 61080, Trabzon, Türkiye
+                </p>
+              </div>
+              <div class="d-flex">
+                <i class="fas fa-at"></i>
+                <p style="font-size: 12px; margin-left: 10px">kik@ktu.edu.tr</p>
+              </div>
+            </div>
+            <div
+              class="col col-sm-12 col-md-6 col-lg-3"
+              style="color: #fff; margin-top: 20px; padding: 12px"
+            >
+              <div class="d-flex">
+                <i class="fas fa-phone-square-alt"></i>
+                <p style="font-size: 12px; margin-left: 10px">
+                  +90 462 377 3000
+                </p>
+              </div>
+              <div class="d-flex">
+                <i class="fas fa-fax"></i>
+                <p style="font-size: 12px; margin-left: 10px">
+                  +90 462 325 32 05 - 325 31 85
+                </p>
+              </div>
+            </div>
+            <div class="col-auto ms-auto" style="margin-top: 20px; gap: 5px">
+              <a
+                href="https://play.google.com/store/apps/details?id=ktu.mobil&hl=tr&pli=1"
+                style="padding-right: 3px; color: #2d2d2d"
+                target="_blank"
+              >
+                <img src="https://www.ktu.edu.tr/image/google-play.png" />
+              </a>
+              <a style="padding-left: 3px">
+                <img src="https://www.ktu.edu.tr/image/app-store.png" />
+              </a>
+            </div>
+          </div>
+          <div class="row" style="margin: 30px; margin-left: 0">
+            <div
+              class="col col-sm-12 col-md-6 col-lg-6"
+              style="color: #fff; font-size: 12px; padding: 25px"
+            >
+              © 2022 Karadeniz Teknik Üniversitesi. Tüm Hakları Saklıdır
+            </div>
+            <div
+              class="col-auto ms-auto"
+              style="font-size: 32px; padding: 12px"
+            >
+              <a
+                class="sosyal"
+                href="https://www.facebook.com/tcktu1955"
+                target="_blank"
+                ><i class="fab fa-facebook-square"></i
+              ></a>
+              <a
+                class="sosyal"
+                href="https://twitter.com/tcktu1955"
+                target="_blank"
+                ><i class="fab fa-twitter-square"></i
+              ></a>
+              <a
+                class="sosyal"
+                href="https://www.linkedin.com/school/ktu1955/"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i
+              ></a>
+              <a
+                class="sosyal"
+                href="https://www.youtube.com/tcktu1955"
+                target="_blank"
+                ><i class="fab fa-youtube-square"></i
+              ></a>
+              <a
+                class="sosyal"
+                href="https://www.instagram.com/tcktu1955"
+                target="_blank"
+                ><i class="fab fa-instagram-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
