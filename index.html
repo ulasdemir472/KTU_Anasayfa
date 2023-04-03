@@ -27,12 +27,11 @@
     ></script>
 
     <style>
+      /* Title top */
       #title ul {
         list-style: none;
       }
-      #top-bar {
-        font-size: small;
-      }
+
       #top-bar a {
         margin-top: 5px;
         margin-right: 7px;
@@ -40,19 +39,13 @@
       #top-bar .container-fluid {
         background-image: url("https://www.ktu.edu.tr/image/top_bg.png");
       }
-
+      /* Title bottom */
       #bottom-navbar {
         display: flex;
-        min-height: 130px;
         justify-content: space-between;
       }
-
       .brand-image {
         max-width: 350px;
-      }
-      .right {
-        max-height: 130px;
-        max-width: 75%;
       }
       .right nav {
         margin-top: 40px;
@@ -70,10 +63,12 @@
         color: white;
         background-color: #00426a;
       }
+      /* Floating images */
       #floating-images {
         padding: 0% 6%;
         background-color: #f1f2f2;
       }
+      /* Links */
       #links {
         height: 100px;
         width: 100%;
@@ -91,26 +86,22 @@
       .p2 {
         margin-bottom: 2px;
         line-height: 1.2;
-        text-decoration: none;
         font-weight: 600;
         font-size: 12px;
         color: #808285;
       }
-      .hb {
+      .links-item {
         min-height: 90px;
         color: #00426a;
         padding-top: 10px;
         padding-right: 40px;
         text-decoration: none;
       }
-      .col-auto {
-        flex: 0 0 auto;
-        width: auto;
-      }
       #links a:hover {
         cursor: pointer;
         background-color: rgb(187, 187, 187);
       }
+      /* Announcements */
       #announcements {
         background-image: url("https://www.ktu.edu.tr/image/duyuru_bg.png");
       }
@@ -123,8 +114,8 @@
       .bolum-adi {
         color: #fff;
         padding-top: 7px;
-        float: left;
         font-size: 30px;
+        float: left;
       }
       .ay {
         width: 100%;
@@ -150,7 +141,6 @@
         font-size: 12px;
         color: #1eafc7;
       }
-
       .duyuru:hover {
         cursor: pointer;
         background-color: #1eafc7;
@@ -158,10 +148,15 @@
       .duyuru:hover .alt-baslik {
         color: #fff;
       }
+      /* News */
+      #news a {
+        border: none;
+        margin-top: 10px;
+        text-decoration: none;
+      }
       .card-title {
         margin-top: 0.5rem;
         font-size: 18px;
-
         color: #00426a;
         min-height: 67px;
       }
@@ -169,6 +164,23 @@
         font-size: 14px;
         color: #6d6e71;
         min-height: 63px;
+      }
+      #events a {
+        border: none;
+        margin-top: 10px;
+        padding: 20px;
+        text-decoration: none;
+        background-color: #ef233c;
+        border-right: solid #cd061e 1px;
+      }
+      .ktu-numbers {
+        padding: 15px;
+        text-align: center;
+        color: #00426a;
+      }
+      .ktu-numbers-icon {
+        font-size: 60px;
+        padding: 10px;
       }
       .logo {
         max-width: 60px;
@@ -391,25 +403,13 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img
-              src="https://www.ktu.edu.tr/slayt/slaytlqMyGQ.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
+            <img src="https://www.ktu.edu.tr/slayt/slaytlqMyGQ.jpg" />
           </div>
           <div class="carousel-item">
-            <img
-              src="https://www.ktu.edu.tr/slayt/slaytYh9Kxc.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
+            <img src="https://www.ktu.edu.tr/slayt/slaytYh9Kxc.jpg" />
           </div>
           <div class="carousel-item">
-            <img
-              src="https://www.ktu.edu.tr/slayt/slaytYkgUHR.jpg"
-              class="d-block w-100"
-              alt="..."
-            />
+            <img src="https://www.ktu.edu.tr/slayt/slaytYkgUHR.jpg" />
           </div>
         </div>
         <button
@@ -438,7 +438,7 @@
         <div class="row">
           <div class="row row-cols-7 row-cols-lg-7">
             <a
-              class="col-auto hb"
+              class="col-auto links-item"
               href="https://bys.ktu.edu.tr/"
               target="_blank"
             >
@@ -452,7 +452,7 @@
               </p>
             </a>
             <a
-              class="col-auto hb"
+              class="col-auto links-item"
               href="https://ebys.ktu.edu.tr/"
               target="_blank"
             >
@@ -465,7 +465,7 @@
               </p>
             </a>
             <a
-              class="col-auto hb"
+              class="col-auto links-item"
               href="https://www.ktu.edu.tr/bilgiislem/eposta"
               target="_blank"
             >
@@ -478,7 +478,7 @@
               </p>
             </a>
             <a
-              class="col-auto hb"
+              class="col-auto links-item"
               href="https://www.ktu.edu.tr/yonetim"
               target="_blank"
             >
@@ -491,7 +491,7 @@
               </p>
             </a>
             <a
-              class="col-auto hb"
+              class="col-auto links-item"
               href="https://www.ktu.edu.tr/kik"
               target="_blank"
             >
@@ -504,7 +504,7 @@
               </p>
             </a>
             <a
-              class="col-auto hb"
+              class="col-auto links-item"
               href="https://www.ktu.edu.tr/library"
               target="_blank"
             >
@@ -517,7 +517,7 @@
               </p>
             </a>
             <a
-              class="col-auto hb"
+              class="col-auto links-item"
               href="https://uek.ktu.edu.tr/"
               target="_blank"
             >
@@ -543,442 +543,150 @@
               <h1 class="bolum-adi">duyurular</h1>
             </div>
           </div>
-          <div class="row">
-            <div class="row" style="padding-left: 10px; padding-right: 10px">
-              <a
-                class="col-12 col-sm-6 col-md-6 col-lg-4 rounded duyuru"
-                href="https://www.ktu.edu.tr/tr/duyuru/sozlesmeli-bilisim-personeli-alim-ilani"
-                style="
-                  min-height: 105px;
-                  padding: 14px 25px;
-                  margin-bottom: 18px;
-                  text-decoration: none;
-                "
-              >
-                <div class="row h-100">
-                  <div
-                    class="col-auto align-self-end"
-                    style="padding-left: 0px"
-                  >
-                    <h3 class="gun">27</h3>
-                    <p class="ay">Mart</p>
-                  </div>
-                  <div class="col align-self-end" style="padding-left: 0px">
-                    <div class="baslik">
-                      Sözleşmeli Bilişim Personeli Alım İlanı
-                    </div>
-                    <p class="alt-baslik">KTÜ Rektörlüğü</p>
-                  </div>
+
+          <div class="row" style="padding-left: 10px; padding-right: 10px">
+            <a
+              class="col-12 col-sm-6 col-md-6 col-lg-4 rounded duyuru"
+              href="https://www.ktu.edu.tr/tr/duyuru/sozlesmeli-bilisim-personeli-alim-ilani"
+              style="
+                min-height: 105px;
+                padding: 14px 25px;
+                margin-bottom: 18px;
+                text-decoration: none;
+              "
+            >
+              <div class="row h-100">
+                <div class="col-auto align-self-end" style="padding-left: 0px">
+                  <h3 class="gun">27</h3>
+                  <p class="ay">Mart</p>
                 </div>
-              </a>
-              <a
-                class="col-12 col-sm-6 col-md-6 col-lg-4 rounded duyuru"
-                href="https://www.ktu.edu.tr/tr/duyuru/sozlesmeli-bilisim-personeli-alim-ilani"
-                style="
-                  min-height: 105px;
-                  padding: 14px 25px;
-                  margin-bottom: 18px;
-                  text-decoration: none;
-                "
-              >
-                <div class="row h-100">
-                  <div
-                    class="col-auto align-self-end"
-                    style="padding-left: 0px"
-                  >
-                    <h3 class="gun">27</h3>
-                    <p class="ay">Mart</p>
+                <div class="col align-self-end" style="padding-left: 0px">
+                  <div class="baslik">
+                    Sözleşmeli Bilişim Personeli Alım İlanı
                   </div>
-                  <div class="col align-self-end" style="padding-left: 0px">
-                    <div class="baslik">
-                      Sözleşmeli Bilişim Personeli Alım İlanı
-                    </div>
-                    <p class="alt-baslik">KTÜ Rektörlüğü</p>
-                  </div>
+                  <p class="alt-baslik">KTÜ Rektörlüğü</p>
                 </div>
-              </a>
-              <a
-                class="col-12 col-sm-6 col-md-6 col-lg-4 rounded duyuru"
-                href="https://www.ktu.edu.tr/tr/duyuru/sozlesmeli-bilisim-personeli-alim-ilani"
-                style="
-                  min-height: 105px;
-                  padding: 14px 25px;
-                  margin-bottom: 18px;
-                  text-decoration: none;
-                "
-              >
-                <div class="row h-100">
-                  <div
-                    class="col-auto align-self-end"
-                    style="padding-left: 0px"
-                  >
-                    <h3 class="gun">27</h3>
-                    <p class="ay">Mart</p>
-                  </div>
-                  <div class="col align-self-end" style="padding-left: 0px">
-                    <div class="baslik">
-                      Sözleşmeli Bilişim Personeli Alım İlanı
-                    </div>
-                    <p class="alt-baslik">KTÜ Rektörlüğü</p>
-                  </div>
+              </div>
+            </a>
+            <a
+              class="col-12 col-sm-6 col-md-6 col-lg-4 rounded duyuru"
+              href="https://www.ktu.edu.tr/tr/duyuru/sozlesmeli-bilisim-personeli-alim-ilani"
+              style="
+                min-height: 105px;
+                padding: 14px 25px;
+                margin-bottom: 18px;
+                text-decoration: none;
+              "
+            >
+              <div class="row h-100">
+                <div class="col-auto align-self-end" style="padding-left: 0px">
+                  <h3 class="gun">27</h3>
+                  <p class="ay">Mart</p>
                 </div>
-              </a>
-              <a
-                class="col-12 col-sm-6 col-md-6 col-lg-4 rounded duyuru"
-                href="https://www.ktu.edu.tr/tr/duyuru/sozlesmeli-bilisim-personeli-alim-ilani"
-                style="
-                  min-height: 105px;
-                  padding: 14px 25px;
-                  margin-bottom: 18px;
-                  text-decoration: none;
-                "
-              >
-                <div class="row h-100">
-                  <div
-                    class="col-auto align-self-end"
-                    style="padding-left: 0px"
-                  >
-                    <h3 class="gun">27</h3>
-                    <p class="ay">Mart</p>
+                <div class="col align-self-end" style="padding-left: 0px">
+                  <div class="baslik">
+                    Sözleşmeli Bilişim Personeli Alım İlanı
                   </div>
-                  <div class="col align-self-end" style="padding-left: 0px">
-                    <div class="baslik">
-                      Sözleşmeli Bilişim Personeli Alım İlanı
-                    </div>
-                    <p class="alt-baslik">KTÜ Rektörlüğü</p>
-                  </div>
+                  <p class="alt-baslik">KTÜ Rektörlüğü</p>
                 </div>
-              </a>
-              <a
-                class="col-12 col-sm-6 col-md-6 col-lg-4 rounded duyuru"
-                href="https://www.ktu.edu.tr/tr/duyuru/sozlesmeli-bilisim-personeli-alim-ilani"
-                style="
-                  min-height: 105px;
-                  padding: 14px 25px;
-                  margin-bottom: 18px;
-                  text-decoration: none;
-                "
-              >
-                <div class="row h-100">
-                  <div
-                    class="col-auto align-self-end"
-                    style="padding-left: 0px"
-                  >
-                    <h3 class="gun">27</h3>
-                    <p class="ay">Mart</p>
-                  </div>
-                  <div class="col align-self-end" style="padding-left: 0px">
-                    <div class="baslik">
-                      Sözleşmeli Bilişim Personeli Alım İlanı
-                    </div>
-                    <p class="alt-baslik">KTÜ Rektörlüğü</p>
-                  </div>
+              </div>
+            </a>
+            <a
+              class="col-12 col-sm-6 col-md-6 col-lg-4 rounded duyuru"
+              href="https://www.ktu.edu.tr/tr/duyuru/sozlesmeli-bilisim-personeli-alim-ilani"
+              style="
+                min-height: 105px;
+                padding: 14px 25px;
+                margin-bottom: 18px;
+                text-decoration: none;
+              "
+            >
+              <div class="row h-100">
+                <div class="col-auto align-self-end" style="padding-left: 0px">
+                  <h3 class="gun">27</h3>
+                  <p class="ay">Mart</p>
                 </div>
-              </a>
-              <a
-                class="col-12 col-sm-6 col-md-6 col-lg-4 rounded duyuru"
-                href="https://www.ktu.edu.tr/tr/duyuru/sozlesmeli-bilisim-personeli-alim-ilani"
-                style="
-                  min-height: 105px;
-                  padding: 14px 25px;
-                  margin-bottom: 18px;
-                  text-decoration: none;
-                "
-              >
-                <div class="row h-100">
-                  <div
-                    class="col-auto align-self-end"
-                    style="padding-left: 0px"
-                  >
-                    <h3 class="gun">27</h3>
-                    <p class="ay">Mart</p>
+                <div class="col align-self-end" style="padding-left: 0px">
+                  <div class="baslik">
+                    Sözleşmeli Bilişim Personeli Alım İlanı
                   </div>
-                  <div class="col align-self-end" style="padding-left: 0px">
-                    <div class="baslik">
-                      Sözleşmeli Bilişim Personeli Alım İlanı
-                    </div>
-                    <p class="alt-baslik">KTÜ Rektörlüğü</p>
-                  </div>
+                  <p class="alt-baslik">KTÜ Rektörlüğü</p>
                 </div>
-              </a>
-            </div>
+              </div>
+            </a>
+            <a
+              class="col-12 col-sm-6 col-md-6 col-lg-4 rounded duyuru"
+              href="https://www.ktu.edu.tr/tr/duyuru/sozlesmeli-bilisim-personeli-alim-ilani"
+              style="
+                min-height: 105px;
+                padding: 14px 25px;
+                margin-bottom: 18px;
+                text-decoration: none;
+              "
+            >
+              <div class="row h-100">
+                <div class="col-auto align-self-end" style="padding-left: 0px">
+                  <h3 class="gun">27</h3>
+                  <p class="ay">Mart</p>
+                </div>
+                <div class="col align-self-end" style="padding-left: 0px">
+                  <div class="baslik">
+                    Sözleşmeli Bilişim Personeli Alım İlanı
+                  </div>
+                  <p class="alt-baslik">KTÜ Rektörlüğü</p>
+                </div>
+              </div>
+            </a>
+            <a
+              class="col-12 col-sm-6 col-md-6 col-lg-4 rounded duyuru"
+              href="https://www.ktu.edu.tr/tr/duyuru/sozlesmeli-bilisim-personeli-alim-ilani"
+              style="
+                min-height: 105px;
+                padding: 14px 25px;
+                margin-bottom: 18px;
+                text-decoration: none;
+              "
+            >
+              <div class="row h-100">
+                <div class="col-auto align-self-end" style="padding-left: 0px">
+                  <h3 class="gun">27</h3>
+                  <p class="ay">Mart</p>
+                </div>
+                <div class="col align-self-end" style="padding-left: 0px">
+                  <div class="baslik">
+                    Sözleşmeli Bilişim Personeli Alım İlanı
+                  </div>
+                  <p class="alt-baslik">KTÜ Rektörlüğü</p>
+                </div>
+              </div>
+            </a>
+            <a
+              class="col-12 col-sm-6 col-md-6 col-lg-4 rounded duyuru"
+              href="https://www.ktu.edu.tr/tr/duyuru/sozlesmeli-bilisim-personeli-alim-ilani"
+              style="
+                min-height: 105px;
+                padding: 14px 25px;
+                margin-bottom: 18px;
+                text-decoration: none;
+              "
+            >
+              <div class="row h-100">
+                <div class="col-auto align-self-end" style="padding-left: 0px">
+                  <h3 class="gun">27</h3>
+                  <p class="ay">Mart</p>
+                </div>
+                <div class="col align-self-end" style="padding-left: 0px">
+                  <div class="baslik">
+                    Sözleşmeli Bilişim Personeli Alım İlanı
+                  </div>
+                  <p class="alt-baslik">KTÜ Rektörlüğü</p>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </div>
     </section>
-    <!-- <section id="announcements">
-      <div class="container-fluid">
-        <div class="container">
-          <div class="row">
-            <div class="col-12" style="padding: 20px; padding-left: 0px">
-              <div class="cizgi"></div>
-              <h1 class="bolum-adi">duyurular</h1>
-            </div>
-          </div>
-          <div class="row">
-            <div class="carousel slide">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div
-                    class="row"
-                    style="padding-left: 10px; padding-right: 10px"
-                  >
-                    <a
-                      class="col-12 col-sm-6 col-md-6 col-lg-4 rounded duyuru"
-                      href="https://www.ktu.edu.tr/tr/duyuru/sozlesmeli-bilisim-personeli-alim-ilani"
-                      style="
-                        min-height: 105px;
-                        padding: 14px 25px;
-                        margin-bottom: 18px;
-                        text-decoration: none;
-                      "
-                    >
-                      <div class="row h-100">
-                        <div
-                          class="col-auto align-self-end"
-                          style="padding-left: 0px"
-                        >
-                          <h3 class="gun">27</h3>
-                          <p class="ay">Mart</p>
-                        </div>
-                        <div
-                          class="col align-self-end"
-                          style="padding-left: 0px"
-                        >
-                          <div class="baslik">
-                            Sözleşmeli Bilişim Personeli Alım İlanı
-                          </div>
-                          <p class="alt-baslik">KTÜ Rektörlüğü</p>
-                        </div>
-                      </div>
-                    </a>
-                    <a
-                      class="col-12 col-sm-6 col-md-6 col-lg-4 rounded duyuru"
-                      href="https://www.ktu.edu.tr/tr/duyuru/sozlesmeli-bilisim-personeli-alim-ilani"
-                      style="
-                        min-height: 105px;
-                        padding: 14px 25px;
-                        margin-bottom: 18px;
-                        text-decoration: none;
-                      "
-                    >
-                      <div class="row h-100">
-                        <div
-                          class="col-auto align-self-end"
-                          style="padding-left: 0px"
-                        >
-                          <h3 class="gun">27</h3>
-                          <p class="ay">Mart</p>
-                        </div>
-                        <div
-                          class="col align-self-end"
-                          style="padding-left: 0px"
-                        >
-                          <div class="baslik">
-                            Sözleşmeli Bilişim Personeli Alım İlanı
-                          </div>
-                          <p class="alt-baslik">KTÜ Rektörlüğü</p>
-                        </div>
-                      </div>
-                    </a>
-                    <a
-                      class="col-12 col-sm-6 col-md-6 col-lg-4 rounded duyuru"
-                      href="https://www.ktu.edu.tr/tr/duyuru/sozlesmeli-bilisim-personeli-alim-ilani"
-                      style="
-                        min-height: 105px;
-                        padding: 14px 25px;
-                        margin-bottom: 18px;
-                        text-decoration: none;
-                      "
-                    >
-                      <div class="row h-100">
-                        <div
-                          class="col-auto align-self-end"
-                          style="padding-left: 0px"
-                        >
-                          <h3 class="gun">27</h3>
-                          <p class="ay">Mart</p>
-                        </div>
-                        <div
-                          class="col align-self-end"
-                          style="padding-left: 0px"
-                        >
-                          <div class="baslik">
-                            Sözleşmeli Bilişim Personeli Alım İlanı
-                          </div>
-                          <p class="alt-baslik">KTÜ Rektörlüğü</p>
-                        </div>
-                      </div>
-                    </a>
-                    <a
-                      class="col-12 col-sm-6 col-md-6 col-lg-4 rounded duyuru"
-                      href="https://www.ktu.edu.tr/tr/duyuru/sozlesmeli-bilisim-personeli-alim-ilani"
-                      style="
-                        min-height: 105px;
-                        padding: 14px 25px;
-                        margin-bottom: 18px;
-                        text-decoration: none;
-                      "
-                    >
-                      <div class="row h-100">
-                        <div
-                          class="col-auto align-self-end"
-                          style="padding-left: 0px"
-                        >
-                          <h3 class="gun">27</h3>
-                          <p class="ay">Mart</p>
-                        </div>
-                        <div
-                          class="col align-self-end"
-                          style="padding-left: 0px"
-                        >
-                          <div class="baslik">
-                            Sözleşmeli Bilişim Personeli Alım İlanı
-                          </div>
-                          <p class="alt-baslik">KTÜ Rektörlüğü</p>
-                        </div>
-                      </div>
-                    </a>
-                    <a
-                      class="col-12 col-sm-6 col-md-6 col-lg-4 rounded duyuru"
-                      href="https://www.ktu.edu.tr/tr/duyuru/sozlesmeli-bilisim-personeli-alim-ilani"
-                      style="
-                        min-height: 105px;
-                        padding: 14px 25px;
-                        margin-bottom: 18px;
-                        text-decoration: none;
-                      "
-                    >
-                      <div class="row h-100">
-                        <div
-                          class="col-auto align-self-end"
-                          style="padding-left: 0px"
-                        >
-                          <h3 class="gun">27</h3>
-                          <p class="ay">Mart</p>
-                        </div>
-                        <div
-                          class="col align-self-end"
-                          style="padding-left: 0px"
-                        >
-                          <div class="baslik">
-                            Sözleşmeli Bilişim Personeli Alım İlanı
-                          </div>
-                          <p class="alt-baslik">KTÜ Rektörlüğü</p>
-                        </div>
-                      </div>
-                    </a>
-                    <a
-                      class="col-12 col-sm-6 col-md-6 col-lg-4 rounded duyuru"
-                      href="https://www.ktu.edu.tr/tr/duyuru/sozlesmeli-bilisim-personeli-alim-ilani"
-                      style="
-                        min-height: 105px;
-                        padding: 14px 25px;
-                        margin-bottom: 18px;
-                        text-decoration: none;
-                      "
-                    >
-                      <div class="row h-100">
-                        <div
-                          class="col-auto align-self-end"
-                          style="padding-left: 0px"
-                        >
-                          <h3 class="gun">27</h3>
-                          <p class="ay">Mart</p>
-                        </div>
-                        <div
-                          class="col align-self-end"
-                          style="padding-left: 0px"
-                        >
-                          <div class="baslik">
-                            Sözleşmeli Bilişim Personeli Alım İlanı
-                          </div>
-                          <p class="alt-baslik">KTÜ Rektörlüğü</p>
-                        </div>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div
-              class="col-12"
-              style="
-                text-align: center;
-                color: #fff;
-                margin-top: 1rem;
-                line-height: 1.1 !important;
-              "
-            >
-              <a
-                data-bs-target="#carousel-duyuru"
-                data-bs-slide="prev"
-                style="
-                  cursor: pointer;
-                  padding: 5px 0px 5px 0px;
-                  position: relative;
-                  top: -5px;
-                "
-                ><i
-                  class="fas fa-angle-double-left"
-                  style="font-size: 1.3rem"
-                ></i
-              ></a>
-              <span
-                style="
-                  width: 0;
-                  height: 0;
-                  border-bottom: 24px solid #1eafc7;
-                  border-left: 12px solid transparent;
-                  position: relative;
-                  top: -24px;
-                "
-              ></span>
-              <a
-                href="https://www.ktu.edu.tr/tr/duyurular"
-                style="
-                  border-top-left-radius: 5px;
-                  border-top-right-radius: 5px;
-                  position: relative;
-                  top: -4px;
-                  text-decoration: none;
-                  color: #fff;
-                  padding: 5px 15px 5px 15px;
-                  background-color: #1eafc7;
-                  font-size: 14px;
-                "
-                >Tüm Duyurular</a
-              ><span
-                style="
-                  width: 0;
-                  height: 0;
-                  border-bottom: 24px solid #1eafc7;
-                  border-right: 12px solid transparent;
-                  position: relative;
-                  top: -24px;
-                "
-              ></span>
-              <a
-                data-bs-target="#carousel-duyuru"
-                data-bs-slide="next"
-                style="
-                  cursor: pointer;
-                  padding: 5px 0px 5px 0px;
-                  position: relative;
-                  top: -5px;
-                "
-                ><i
-                  class="fas fa-angle-double-right"
-                  style="font-size: 1.3rem"
-                ></i
-              ></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
 
     <section id="news">
       <div class="container-fluid">
@@ -992,7 +700,6 @@
           <div class="row">
             <a
               class="card col-12 col-sm-12 col-md-12 col-lg-4"
-              style="border: none; margin-top: 10px; text-decoration: none"
               href="https://www.ktu.edu.tr/tr/haber/ogretim-uyelerimiz-6-subat-kahramanmaras-depremleri-ile-ilgili-sehir-paydaslarini%C2%A0bilgilendirdi"
               target="_blank"
             >
@@ -1022,7 +729,6 @@
             </a>
             <a
               class="card col-12 col-sm-12 col-md-12 col-lg-4"
-              style="border: none; margin-top: 10px; text-decoration: none"
               href="https://www.ktu.edu.tr/tr/haber/kutuphane-haftasinda-universitemizdeki-yazarlarimiz-ile-soylesiimza-programi-duzenlendi-jPe"
               target="_blank"
             >
@@ -1052,7 +758,6 @@
             </a>
             <a
               class="card col-12 col-sm-12 col-md-12 col-lg-4"
-              style="border: none; margin-top: 10px; text-decoration: none"
               href="https://www.ktu.edu.tr/tto/haber/tubitak-2209-a-ve-2209-b-programlarinda-universitemizin-buyuk-basarisi"
               target="_blank"
             >
@@ -1094,16 +799,7 @@
           </div>
           <div class="row">
             <a
-              class="card col-12 col-sm-12 col-md-12 col-lg-4"
-              style="
-                border: none;
-                margin-top: 10px;
-                padding: 20px;
-                text-decoration: none;
-                background-color: #ef233c;
-                border-right: solid #cd061e 1px;
-                max-width: 320px;
-              "
+              class="card col-12 col-sm-12 col-md-12 col-lg-3"
               href="https://www.ktu.edu.tr/tr/haber/ogretim-uyelerimiz-6-subat-kahramanmaras-depremleri-ile-ilgili-sehir-paydaslarini%C2%A0bilgilendirdi"
               target="_blank"
             >
@@ -1123,11 +819,18 @@
                   Prof.Dr.Bahittin Kahveci KTÜ TV'nin konuğu olacaktır.
                 </p>
                 <div class="row" style="color: #fff">
-                  <div class="col-8">
+                  <div class="col-6">
                     <i class="fas fa-map-marker-alt"></i>
                     Radyo TV
                   </div>
-                  <div class="col-4">
+                  <div class="col-3">
+                    <i
+                      class="fas fa-calendar"
+                      style="float: left; padding-right: 6px; padding-top: 4px"
+                    ></i>
+                    <span style="font-size: 15px">3 Nisan</span>
+                  </div>
+                  <div class="col-3">
                     <i class="fas fa-clock"></i>
                     10.00
                   </div>
@@ -1136,16 +839,7 @@
               </div>
             </a>
             <a
-              class="card col-12 col-sm-12 col-md-12 col-lg-4"
-              style="
-                border: none;
-                margin-top: 10px;
-                padding: 20px;
-                text-decoration: none;
-                background-color: #ef233c;
-                border-right: solid #cd061e 1px;
-                max-width: 320px;
-              "
+              class="card col-12 col-sm-12 col-md-12 col-lg-3"
               href="https://www.ktu.edu.tr/akademi/etkinlik/180-gunluk-eylem-plani-sonuc-raporu-bilgilendirme-toplantisi"
               target="_blank"
             >
@@ -1165,11 +859,18 @@
                   180 Günlük Eylem Planı Sonuç Raporu Bilgilendirme Toplantısı
                 </p>
                 <div class="row" style="color: #fff">
-                  <div class="col-8">
+                  <div class="col-6">
                     <i class="fas fa-map-marker-alt"></i>
                     KTÜ Uzaktan Eğitim Sistemi
                   </div>
-                  <div class="col-4">
+                  <div class="col-3">
+                    <i
+                      class="fas fa-calendar"
+                      style="float: left; padding-right: 6px; padding-top: 4px"
+                    ></i>
+                    <span style="font-size: 15px">3 Nisan</span>
+                  </div>
+                  <div class="col-3">
                     <i class="fas fa-clock"></i>
                     13.30
                   </div>
@@ -1178,16 +879,7 @@
               </div>
             </a>
             <a
-              class="card col-12 col-sm-12 col-md-12 col-lg-4"
-              style="
-                border: none;
-                margin-top: 10px;
-                padding: 20px;
-                text-decoration: none;
-                background-color: #ef233c;
-                border-right: solid #cd061e 1px;
-                max-width: 320px;
-              "
+              class="card col-12 col-sm-12 col-md-12 col-lg-3"
               href="https://www.ktu.edu.tr/tr/etkinlik/8-uluslararasi-saglik-bilimleri-ve-yonetimi-kongresi"
               target="_blank"
             >
@@ -1207,11 +899,18 @@
                   "Sağlıkta İnsan Kaynakları Yönetimi ve İstihdam Sorunları"
                 </p>
                 <div class="row" style="color: #fff">
-                  <div class="col-8">
+                  <div class="col-6">
                     <i class="fas fa-map-marker-alt"></i>
                     KTÜ
                   </div>
-                  <div class="col-4">
+                  <div class="col-3">
+                    <i
+                      class="fas fa-calendar"
+                      style="float: left; padding-right: 6px; padding-top: 4px"
+                    ></i>
+                    <span style="font-size: 15px">3 Nisan</span>
+                  </div>
+                  <div class="col-3">
                     <i class="fas fa-clock"></i>
                     09.00
                   </div>
@@ -1220,15 +919,7 @@
               </div>
             </a>
             <a
-              class="card col-12 col-sm-12 col-md-12 col-lg-4"
-              style="
-                border: none;
-                margin-top: 10px;
-                padding: 20px;
-                text-decoration: none;
-                background-color: #ef233c;
-                max-width: 320px;
-              "
+              class="card col-12 col-sm-12 col-md-12 col-lg-3"
               href="https://www.ktu.edu.tr/tr/etkinlik/7-uluslararasi-adli-hemsirelik-kongresi"
               target="_blank"
             >
@@ -1248,11 +939,18 @@
                   7. International Forensic Nursing Congress
                 </p>
                 <div class="row" style="color: #fff">
-                  <div class="col-8">
+                  <div class="col-6">
                     <i class="fas fa-map-marker-alt"></i>
                     KTÜ OKM
                   </div>
-                  <div class="col-4">
+                  <div class="col-3">
+                    <i
+                      class="fas fa-calendar"
+                      style="float: left; padding-right: 6px; padding-top: 4px"
+                    ></i>
+                    <span style="font-size: 15px">3 Nisan</span>
+                  </div>
+                  <div class="col-3">
                     <i class="fas fa-clock"></i>
                     17.00
                   </div>
@@ -1275,91 +973,43 @@
             </div>
           </div>
           <div class="row row-cols-8">
-            <div
-              class="col"
-              style="padding: 15px; text-align: center; color: #00426a"
-            >
-              <i
-                class="fas fa-book-reader"
-                style="font-size: 60px; padding: 10px"
-              ></i>
+            <div class="col ktu-numbers">
+              <i class="fas fa-book-reader ktu-numbers-icon"></i>
               <h3>30000</h3>
               <h5>Öğrenci</h5>
             </div>
-            <div
-              class="col"
-              style="padding: 15px; text-align: center; color: #00426a"
-            >
-              <i
-                class="fas fa-graduation-cap"
-                style="font-size: 60px; padding: 10px"
-              ></i>
+            <div class="col ktu-numbers">
+              <i class="fas fa-graduation-cap ktu-numbers-icon"></i>
               <h3>249761</h3>
               <h5>Mezun</h5>
             </div>
-            <div
-              class="col"
-              style="padding: 15px; text-align: center; color: #00426a"
-            >
-              <i
-                class="fas fa-user-graduate"
-                style="font-size: 60px; padding: 10px"
-              ></i>
+            <div class="col ktu-numbers">
+              <i class="fas fa-user-graduate ktu-numbers-icon"></i>
               <h3>2141</h3>
               <h5>Akademik Personel</h5>
             </div>
-            <div
-              class="col"
-              style="padding: 15px; text-align: center; color: #00426a"
-            >
-              <i
-                class="fas fa-user-tie"
-                style="font-size: 60px; padding: 10px"
-              ></i>
+            <div class="col ktu-numbers">
+              <i class="fas fa-user-tie ktu-numbers-icon"></i>
               <h3>3141</h3>
               <h5>İdari Personel</h5>
             </div>
-            <div
-              class="col"
-              style="padding: 15px; text-align: center; color: #00426a"
-            >
-              <i
-                class="fas fa-school"
-                style="font-size: 60px; padding: 10px"
-              ></i>
+            <div class="col ktu-numbers">
+              <i class="fas fa-school ktu-numbers-icon"></i>
               <h3>254</h3>
               <h5>Aktif Program</h5>
             </div>
-            <div
-              class="col"
-              style="padding: 15px; text-align: center; color: #00426a"
-            >
-              <i
-                class="fas fa-check-double"
-                style="font-size: 60px; padding: 10px"
-              ></i>
+            <div class="col ktu-numbers">
+              <i class="fas fa-check-double ktu-numbers-icon"></i>
               <h3>26</h3>
               <h5>Akredite Birim</h5>
             </div>
-            <div
-              class="col"
-              style="padding: 15px; text-align: center; color: #00426a"
-            >
-              <i
-                class="fas fa-users"
-                style="font-size: 60px; padding: 10px"
-              ></i>
+            <div class="col ktu-numbers">
+              <i class="fas fa-users ktu-numbers-icon"></i>
               <h3>30</h3>
               <h5>Öğretim Üyesi Başın Öğrenci</h5>
             </div>
-            <div
-              class="col"
-              style="padding: 15px; text-align: center; color: #00426a"
-            >
-              <i
-                class="fas fa-book-reader"
-                style="font-size: 60px; padding: 10px"
-              ></i>
+            <div class="col ktu-numbers">
+              <i class="fas fa-book-reader ktu-numbers-icon"></i>
               <h3>242178</h3>
               <h5>Küyüphane Kaynağı</h5>
             </div>
